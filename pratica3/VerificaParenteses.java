@@ -2,10 +2,8 @@ import java.util.Stack;
 
 public class VerificaParenteses {
 
-    private Stack<String> pilha = new Stack<>();
-
     public boolean verifica(String frase){
-    Stack s= new Stack();
+    Stack<Character> s = new Stack<>();
     char [] myArray= frase.toCharArray();
     for (int i = 0; i < myArray.length; i++) {
         if (myArray[i]== '(') {
